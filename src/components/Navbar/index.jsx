@@ -22,7 +22,9 @@ export const Navbar = () => {
       <Container>
         <Wrap>
           <Wrap.Item>
-            <Wrap.Image src={logo} />
+            <NavLink style={styles("/home")} to={"/home"}>
+              <Wrap.Image src={logo} />
+            </NavLink>
           </Wrap.Item>
           <Wrap.Item>
             {navbar.map((item) => {
