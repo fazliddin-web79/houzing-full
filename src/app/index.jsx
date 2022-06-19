@@ -4,8 +4,8 @@ import { navbar } from "../utils/navbar";
 import { Route, Routes, Navigate } from "react-router-dom";
 import NotFound from "../components/NotFound";
 import Footer from "../components/Footer";
-import SignIn from "../components/signin";
-import SignUp from "../components/signup";
+import SignIn from "../components/Signin";
+import SignUp from "../components/Signup";
 
 export const App = () => {
   return (
@@ -24,7 +24,6 @@ export const App = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Navigate to={"/home"} />} />
-        1`q Az`
       </Routes>
     </>
   );

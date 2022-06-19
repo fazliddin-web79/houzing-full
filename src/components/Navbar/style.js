@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Wrap = styled.div`
-  width: 1440px;
+  width: 1280px;
   display: flex;
   justify-content: space-between;
   margin: 5px auto;
