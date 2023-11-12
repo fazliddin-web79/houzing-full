@@ -26,7 +26,10 @@ export const App = () => {
         {localStorage.getItem("key") && localStorage.getItem("secret") ? (
           <Route path="/" element={<Navigate to={"/properties"} />} />
         ) : (
-          <Route path="/properties" element={<Navigate to={"/sign-up"} />} />
+          <Route>
+            <Route path="/" element={<Navigate to={"/sign-up"} />} />
+            <Route path="/properties" element={<Navigate to={"/sign-up"} />} />
+          </Route>
         )}
       </Routes>
     </>
