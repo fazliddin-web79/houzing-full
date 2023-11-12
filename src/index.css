@@ -11,3 +11,7 @@ body {
   text-decoration: none;
   font-family: "Montserrat";
 }
+.site-footer-logo {
+  height: 300px;
+  width: 300px;
+}

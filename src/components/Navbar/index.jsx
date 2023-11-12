@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { Container, Wrap } from "./style";
 import { navbar } from "../../utils/navbar";
-import logo from "../../assets/icons/logo.svg";
+import logo from "../../assets/icons/61f7cd1767553f0004c53e6e.png";
 import login from "../../assets/icons/login.svg";
 
 export const Navbar = () => {
@@ -29,15 +29,21 @@ export const Navbar = () => {
           <Wrap.Item>
             {navbar.map((item) => {
               return (
-                <NavLink style={styles(item.path)} to={item.path}>
+                <NavLink key={item.id} style={styles(item.path)} to={item.path}>
                   {item.title}
                 </NavLink>
               );
             })}
           </Wrap.Item>
-          <Wrap.Item>
-            <Wrap.Control src={login} />
-          </Wrap.Item>
+          {localStorage.getItem("key") && localStorage.getItem("secret") ? (
+            ""
+          ) : (
+            <Wrap.Item>
+              <NavLink to={"/sign-in"}>
+                <Wrap.Control src={login} />
+              </NavLink>
+            </Wrap.Item>
+          )}
         </Wrap>
       </Container>
       <Outlet />

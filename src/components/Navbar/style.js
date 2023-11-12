@@ -22,5 +22,8 @@ Wrap.Item = styled.div`
   justify-content: center;
 `;
 
-Wrap.Image = styled.img``;
+Wrap.Image = styled.img`
+  width: 250px;
+  height: 250px;
+`;
 Wrap.Control = styled.img``;

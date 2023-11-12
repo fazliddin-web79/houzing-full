@@ -83,6 +83,10 @@ FooterList.FooterHeading = styled.div`
 export const FooterBottom = styled.div`
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   padding: 16px 0;
+  image {
+    height: 300px;
+    width: 300px;
+  }
 `;
 
 FooterBottom.FooterCon = styled.div`

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 600px;
+  height: 550px;
   width: 580px;
   border: 1px solid #e6e9ec;
   box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
@@ -24,8 +24,8 @@ export const WrapInput = styled.div`
   position: relative;
 `;
 export const Label = styled.span`
-  position: absolute;
-  top: 30px;
+  position: relative;
+  top: 3px;
   left: 5px;
   z-index: 1;
   pointer-events: none;
@@ -33,7 +33,7 @@ export const Label = styled.span`
   cursor: pointer;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #696969;
@@ -59,16 +59,6 @@ export const Input = styled.input`
       color: #696969;
     }
     border-bottom: 2px solid #0061df;
-  }
-
-  &:focus ~ ${Label} {
-    font-weight: 600;
-    color: #0d263b;
-    font-size: 14px;
-    left: 0;
-    top: 0;
-    background: white;
-    padding: 2px 5px;
   }
 `;
 

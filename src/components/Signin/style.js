@@ -25,7 +25,7 @@ export const WrapInput = styled.div`
 `;
 export const Label = styled.span`
   position: absolute;
-  top: 30px;
+  top: 3px;
   left: 5px;
   z-index: 1;
   pointer-events: none;
@@ -61,8 +61,6 @@ export const Input = styled.input`
 
     font-size: 14px;
 
-    left: 0;
-    top: 0;
     background: white;
     padding: 2px 5px;
   }

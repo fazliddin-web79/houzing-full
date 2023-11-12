@@ -23,7 +23,11 @@ export const App = () => {
           </Route>
         </Route>
         <Route path="*" element={<NotFound />} />
-        <Route path="/" element={<Navigate to={"/home"} />} />
+        {localStorage.getItem("key") && localStorage.getItem("secret") ? (
+          <Route path="/" element={<Navigate to={"/properties"} />} />
+        ) : (
+          <Route path="/properties" element={<Navigate to={"/sign-up"} />} />
+        )}
       </Routes>
     </>
   );
